@@ -1,0 +1,1552 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\AutoIPED.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#include ""l.chs\\afxprint.rc""        // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\AutoIPED.ico"
+IDR_AUTOIPTYPE          ICON    DISCARDABLE     "res\\AutoIPEDDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+IDB_BITMAP1             BITMAP  DISCARDABLE     "res\\FRSREC_S.BMP"
+IDB_BITMAP2             BITMAP  DISCARDABLE     "res\\PRVREC_S.BMP"
+IDB_BITMAP3             BITMAP  DISCARDABLE     "res\\NXTREC_S.BMP"
+IDB_BITMAP4             BITMAP  DISCARDABLE     "res\\LSTREC_S.BMP"
+IDB_BITMAP5             BITMAP  DISCARDABLE     "res\\NEW.BMP"
+IDB_BITMAP6             BITMAP  DISCARDABLE     "res\\WZDELETE.BMP"
+IDB_BITMAP7             BITMAP  DISCARDABLE     "res\\SAVE.BMP"
+IDB_BITMAP9             BITMAP  DISCARDABLE     "res\\bitmap8.bmp"
+IDB_OPENFILE            BITMAP  DISCARDABLE     "res\\bitmap10.bmp"
+IDB_BITMAP10            BITMAP  DISCARDABLE     "res\\DELETE.BMP"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  20, 20
+BEGIN
+    BUTTON      IDM_COPY_FROM_EXIST_PRJ
+    BUTTON      IDM_SEL_PRJ_VOLUME
+    SEPARATOR
+    BUTTON      ID_MENUITEM31
+    BUTTON      ID_MENUITEM36
+    SEPARATOR
+    BUTTON      ID_MENUITEM32
+    BUTTON      ID_BUTTON_STOPCAL
+    SEPARATOR
+    BUTTON      ID_BUTTON_AUTO_TOTAL
+    BUTTON      ID_MODI_RULE1
+    SEPARATOR
+    BUTTON      ID_CLOSE_ALL_WINDOW
+    BUTTON      ID_ALL_MINIMIZE
+    SEPARATOR
+    BUTTON      IDM_OUT_VIEW
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "工程(&P)"
+    BEGIN
+        MENUITEM "新建/套用工程(&N)...",        IDM_COPY_FROM_EXIST_PRJ
+        MENUITEM "选择工程卷册(&S)...",         IDM_SEL_PRJ_VOLUME
+        MENUITEM SEPARATOR
+        POPUP "导入"
+        BEGIN
+            MENUITEM "导入AutoPD数据",              IDM_IMPORT_AUTOPD
+            MENUITEM "导入AutoPHS数据",             IDM_IMPORT_AUTOPHS
+            MENUITEM "导入保温原始数据(&EXCEL格式)...", 
+                                                    IDM_IMPORT_ORIGINAL_DATA
+            MENUITEM "导入油漆原始数据(E&XCEL格式)...", 
+                                                    IDM_IMPORT_PAINT_ORIGINAL_DATA
+
+            MENUITEM "导入卷册目录库...",           IDM_IMPORT_DIR_DATA
+            MENUITEM "导入UESOFT保温设计软件数据(&U)...", 
+                                                    IDM_IMPORT_OTHER_IPED_UESOFT
+
+            MENUITEM "导入西南院保温设计软件数据(&I)...", 
+                                                    IDM_IMPORT_OTHER_IPED_SW
+            MENUITEM "导入江苏院保温设计软件数据(&J)...", 
+                                                    IDM_IMPORT_OTHER_IPED_JS
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "工程气象参数(&W)...",         ID_CITY_WEATHER
+        MENUITEM SEPARATOR
+        MENUITEM "选项(&O)...",                 IDM_OPTION
+        MENUITEM "文件夹(目录)位置(&P)...",     IDM_FILE_SELDIR
+        MENUITEM "选择规范数据库(&D)...",       IDM_SELECT_DATABASE
+        MENUITEM SEPARATOR
+        MENUITEM "退出(&X)",                    ID_APP_EXIT
+    END
+    POPUP "查看(&V)"
+    BEGIN
+        MENUITEM "工具栏(&T)",                  ID_VIEW_TOOLBAR
+        MENUITEM "状态栏(&S)",                  ID_VIEW_STATUS_BAR
+        MENUITEM "信息栏(&I)",                  IDM_VIEW_INFORMATION_BAR
+        MENUITEM SEPARATOR
+        MENUITEM "支吊架间距...",               IDM_CALC_SUPPORT_SPAN
+    END
+    POPUP "保温结构表(&J)"
+    BEGIN
+        MENUITEM "编辑保温原始数据(&Y)...",     ID_MENUITEM31
+        MENUITEM "编辑油漆原始数据(&P)...",     ID_MENUITEM36
+        MENUITEM SEPARATOR
+        MENUITEM "保温厚度计算...              F5", ID_MENUITEM32
+        MENUITEM "停止计算                Shift+F5", ID_BUTTON_STOPCAL
+        MENUITEM SEPARATOR
+        MENUITEM "结果浏览",                    ID_MENUITEM33
+        MENUITEM "Excel格式输出结果",           ID_MENUITEM34
+    END
+    POPUP "说明表(&S)"
+    BEGIN
+        MENUITEM "生成保温说明表(&B)",          ID_MENUITEM41
+        MENUITEM "编辑保温说明表(&E)",          ID_MENUITEM42
+        MENUITEM "输出保温说明表(&P)",          ID_MENUITEM43
+        MENUITEM SEPARATOR
+        MENUITEM "生成油漆说明表(&C)",          ID_MENUITEM44
+        MENUITEM "编辑油漆说明表(&A)",          ID_MENUITEM45
+        MENUITEM "输出油漆说明表(&T)",          ID_MENUITEM46
+    END
+    POPUP "汇总表(&T)"
+    BEGIN
+        MENUITEM "生成保温材料汇总表(标准+辅助)", ID_MENUITEM51
+        MENUITEM "编辑保温材料汇总表(标准+辅助)", ID_MENUITEM52
+        MENUITEM "编辑保温材料汇总表(人工附加)", ID_MENUITEM53
+        MENUITEM "输出保温材料汇总表(标准+辅助+附加)", ID_MENUITEM54
+        MENUITEM SEPARATOR
+        MENUITEM "生成油漆材料汇总表(标准+辅助)", ID_MENUITEM55
+        MENUITEM "编辑油漆材料汇总表(标准+辅助)", ID_MENUITEM56
+        MENUITEM "编辑油漆材料汇总表(人工附加)", ID_MENUITEM57
+        MENUITEM "输出油漆材料汇总表(标准+辅助+附加)", ID_MENUITEM58
+        MENUITEM SEPARATOR
+        MENUITEM "生成保温材料汇总表(规格)",    ID_MENUITEM59
+        MENUITEM "编辑保温材料汇总表(规格)",    ID_MENUITEM510
+        MENUITEM "输出保温材料汇总表(规格)",    ID_MENUITEM511
+    END
+    POPUP "准则库维护(&W)"
+    BEGIN
+        MENUITEM "保温材料参数库...",           ID_MENUITEM61
+        MENUITEM "复合保温结构库...",           ID_MENUITEM62
+        MENUITEM "保温材料设计准则库...",       ID_MENUITEM63
+        MENUITEM "保护材料设计准则库",          ID_MENUITEM64
+        MENUITEM "油漆结构设计准则库...",       ID_MENUITEM65
+        MENUITEM SEPARATOR
+        MENUITEM "保温设计常数库...",           ID_MENUITEM66
+        MENUITEM "保温辅助材料名称库...",       ID_MENUITEM67
+        MENUITEM "保温辅助材料设计准则库...",   ID_MENUITEM68
+        MENUITEM "保温辅助材料组合件库...",     ID_MENUITEM69
+        MENUITEM SEPARATOR
+        MENUITEM "油漆准则库维护...",           ID_MODI_RULE1
+        MENUITEM "色环箭头油漆颜色准则库...",   ID_MENUITEM610
+        MENUITEM "色环箭头油漆材料名称库...",   ID_MENUI_RING_NAME
+        MENUITEM "色环箭头尺寸准则库...",       ID_MENUITEM611
+        MENUITEM "调和漆单位耗量库...",         ID_MENUITEM612
+        MENUITEM "材料施工余量库...",           ID_MENUITEM613
+        MENUITEM SEPARATOR
+        MENUITEM "保温厚度规则库...",           IDM_THICKNESS_REGULAR
+        MENUITEM SEPARATOR
+        MENUITEM "检查准则库的一致性(&C)",      IDM_CHECK_COHERENCE
+        MENUITEM "替换统一的单位名称(&R)",      ID_MENU_REPLACE_UNIT
+    END
+    POPUP "背景数据维护(&B)"
+    BEGIN
+        MENUITEM "施工图卷册目录库...",         ID_MENUITEM71
+        MENUITEM "各卷册管道、设备名称库..",    ID_MENUITEM72
+        MENUITEM "安装地点库...",               ID_MENUITEM73
+        MENUITEM "管道参数库...",               ID_MENUITEM74
+        MENUITEM "材料数据库...",               IDM_MATERIAL_DATABASE
+        MENUITEM "新旧材料对照表...",           ID_NEW_OLD_MATERIAL
+        MENUITEM "新旧单位对照表...",           IDM_NEW_OLD_UNIT
+    END
+    POPUP "查看数据库(&K)"
+    BEGIN
+        MENUITEM "按整体结构查看各表...",       IDM_SHOW_ALL_TABLE
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "帮助主题(&H)",                ID_MENU_HELP
+        MENUITEM "搜索(&S)...",                 ID_MENU_Search
+        MENUITEM "索引(&I)...",                 ID_MENU_Index
+        MENUITEM SEPARATOR
+        MENUITEM "关于 AutoIPED(&A)...",        ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_F1,          ID_MENU_HELP,           VIRTKEY, NOINVERT
+    VK_F5,          ID_MENUITEM32,          VIRTKEY, NOINVERT
+    VK_F5,          ID_BUTTON_STOPCAL,      VIRTKEY, SHIFT, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 267, 87
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 AutoIPED"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "AutoIPED 8.0 版",IDC_STATIC,44,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2000-2010 UESoft Corp. 保留所有权利。",
+                    IDC_STATIC,43,25,207,8
+    DEFPUSHBUTTON   "确定",IDOK,210,66,50,14,WS_GROUP
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,7,59,253,1
+    LTEXT           "http://www.uesoft.com",IDC_STATIC_address,44,43,112,9
+END
+
+IDD_DIALOG_pform DIALOG DISCARDABLE  0, 0, 145, 175
+STYLE WS_POPUP | WS_CAPTION
+CAPTION "导入其它保温油漆设计软件数据"
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "List2",IDC_LIST2,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,2,7,136,134
+    PUSHBUTTON      "取消",IDC_BUTTON_cancel,80,153,43,15
+    PUSHBUTTON      "选定",IDC_BUTTONselect,26,153,41,15
+END
+
+IDD_DIALOG_calc DIALOG DISCARDABLE  0, 0, 116, 131
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "保温结构经济厚度计算"
+FONT 9, "宋体"
+BEGIN
+    PUSHBUTTON      "   &1.全部计算",IDC_BUTTONcountall,19,19,79,20,BS_LEFT
+    PUSHBUTTON      "   &2.指定范围计算",IDC_BUTTON_range,19,44,79,20,
+                    BS_LEFT
+    PUSHBUTTON      "   &3.自定义计算",IDC_BUTTON_custom,19,71,79,20,BS_LEFT
+    PUSHBUTTON      "   &4.退出",IDC_BUTTONout,19,98,79,20,BS_LEFT
+END
+
+IDD_DIALOG_newproject DIALOG DISCARDABLE  0, 0, 228, 195
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "套用/新建工程"
+FONT 9, "宋体"
+BEGIN
+    EDITTEXT        IDC_EDIT_eng_code,56,10,119,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_engin,56,24,119,12,ES_AUTOHSCROLL
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,14,51,162,125
+    PUSHBUTTON      "新建",IDC_ADDNEWPROJECT,180,97,41,17
+    PUSHBUTTON      "套用",IDC_BUTTON_new,180,120,41,17
+    PUSHBUTTON      "删除",IDC_DELETESELECTPROJECT,180,143,41,17
+    LTEXT           "工程编号",IDC_STATIC,14,12,35,10
+    LTEXT           "工程名称",IDC_STATIC,14,26,34,10
+    LTEXT           "可套用工程名称：",IDC_STATIC,14,40,71,9
+    CONTROL         "Progress1",IDC_PROGRESS1,"msctls_progress32",WS_BORDER,
+                    13,181,207,10
+END
+
+IDD_DIALOG_Range DIALOG DISCARDABLE  0, 0, 196, 71
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "RangeDlg"
+FONT 9, "宋体"
+BEGIN
+    EDITTEXT        IDC_EDIT_start,81,15,37,13,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN_start,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,112,15,11,
+                    12
+    EDITTEXT        IDC_EDIT_end,139,15,37,13,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN_end,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,176,15,11,
+                    12
+    DEFPUSHBUTTON   "确定",IDOK,89,45,28,14
+    LTEXT           "输出范围（1--？）",IDC_STATIC,13,18,68,12
+    LTEXT           "到",IDC_STATIC,127,17,10,8
+    PUSHBUTTON      "取消",IDCANCEL,147,45,28,14,NOT WS_TABSTOP
+END
+
+IDD_DIALOG_input DIALOG DISCARDABLE  0, 0, 220, 65
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 9, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,85,44,50,14
+    EDITTEXT        IDC_EDIT_input,7,23,206,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_static,7,7,206,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER
+END
+
+IDD_FOLDER_LOCATION DIALOGEX 0, 0, 343, 145
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CLIENTEDGE
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "确认",IDOK,94,123,34,14
+    PUSHBUTTON      "放弃",IDCANCEL,203,124,31,14
+    EDITTEXT        IDC_FL1,93,19,222,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_SF1,318,20,18,14,BS_CENTER | BS_VCENTER
+    EDITTEXT        IDC_FL2,93,37,222,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_SF2,318,37,18,14
+    EDITTEXT        IDC_FL3,93,57,222,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_SF3,318,57,18,14
+    EDITTEXT        IDC_FL4,93,75,222,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_SF4,318,75,18,14
+    LTEXT           "Lable1",IDC_DIR1,3,22,89,10
+    LTEXT           "CAUTION",IDC_CAUTION,3,101,333,12
+    LTEXT           "Lable1",IDC_DIR2,3,41,89,10
+    LTEXT           "Lable1",IDC_DIR3,3,60,89,10
+    LTEXT           "Lable1",IDC_DIR4,3,79,89,10
+END
+
+IDD_DIALOG_OPTION DIALOG DISCARDABLE  0, 0, 420, 210
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "选项"
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "关闭时压缩数据库",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | 
+                    NOT WS_VISIBLE | WS_TABSTOP,7,190,97,10
+    CONTROL         "编辑原始数据移动记录时更新",IDC_CHECK3,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,14,19,176,10
+    CONTROL         "编辑原始数据移动记录时自动选择保温材料",
+                    IDC_CHECK_AUTOSELECT_PRE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,14,32,166,10
+    PUSHBUTTON      "替换数据库中所有旧的材料名称",
+                    IDC_REPLACE_OLDNAME_NEWNAME,13,115,125,14
+    PUSHBUTTON      "替换当前工程中所有旧的材料名称",
+                    IDC_REPLACE_CURRENT_OLDNAME_NEWNAME,14,133,125,14
+    DEFPUSHBUTTON   "确定(&OK)",IDOK,143,184,44,16
+    CONTROL         "打开时自动替换旧的材料名称",IDC_CHECK2,"Button",
+                    BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,7,190,126,
+                    10
+    GROUPBOX        "确定保温结构",IDC_STATIC,196,15,204,46
+    CONTROL         "按手工选择的保温结构与保温材料进行计算保温厚度",
+                    IDC_RADIO_HAND_SET,"Button",BS_AUTORADIOBUTTON | 
+                    BS_MULTILINE | WS_GROUP,200,29,197,9
+    CONTROL         "重算所有的保温结构与保温材料再计算保温厚度",
+                    IDC_RADIO_RENEW_SET,"Button",BS_AUTORADIOBUTTON | 
+                    BS_MULTILINE,200,45,198,8
+    GROUPBOX        "选择操作方式：",IDC_STATIC,7,5,406,161
+    CONTROL         "Progress1",IDC_PROGRESS1,"msctls_progress32",NOT 
+                    WS_VISIBLE | WS_BORDER,13,150,165,12
+    CONTROL         "计算时判断最大散热密度",IDC_JUDGEMENT_HEAT_LOSS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,14,58,110,9
+    CONTROL         "移动记录时管道上自动增加阀门",IDC_AUTO_ADD_VALVE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,14,45,128,10
+    LTEXT           "复合保温界面温度与外保温材料最高使用温度的比值",
+                    IDC_STATIC,196,102,124,17
+    EDITTEXT        IDC_EDIT_TEMP_RATIO,322,104,23,13,ES_AUTOHSCROLL
+    LTEXT           "最外层外表面允许的最高温度(℃)",IDC_STATIC,196,124,124,
+                    10
+    EDITTEXT        IDC_EDIT_FACE_MAX_TEMP,322,120,23,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "取消(&C)",IDCANCEL,232,184,44,16
+    GROUPBOX        "计算水和蒸汽性质的标准:",IDC_STATIC,196,65,155,30
+    CONTROL         "IAPWS-IF&97",IDC_RADIO_97,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,201,79,56,10
+    CONTROL         "IFC&67",IDC_RADIO_67,"Button",BS_AUTORADIOBUTTON,301,79,
+                    36,10
+    CONTROL         "启动时弹出“选择工程”对话框",IDC_CHECK_SELECT_ENG,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,70,124,9
+    CONTROL         "选择表中的热价比主汽价值",IDC_CHECK_PRICE_RATIO,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,14,82,124,9
+    CONTROL         "导入保温油漆数据时替换单位",
+                    IDC_CHECK_IMPORT_REPLACE_UNIT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,14,93,124,9
+    CONTROL         "当保温数据温度≤120℃时自动统计油漆",
+                    IDC_CHECK_AUTOPAINT_120,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,14,106,163,9
+    CONTROL         "计算经济厚度时不包含保护层材料费用",
+                    IDC_CHECK_WITHOUT_PROTECTION_COST,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,198,137,162,9
+    CONTROL         "双层异材保温计算经济厚度时内层不按表面温度法计算",
+                    IDC_CHECK_INNER_BY_ECONOMIC,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,198,149,206,9
+END
+
+IDD_EDIT_ORIGINAL_DATA DIALOG DISCARDABLE  0, 0, 546, 295
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "保温原始数据编辑"
+FONT 9, "宋体"
+BEGIN
+    EDITTEXT        IDC_ID,46,8,38,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_VOLNO,46,25,38,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COLOR,145,24,106,94,CBS_DROPDOWN | CBS_AUTOHSCROLL | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_PIPE_DEVICE_NAME,65,42,140,115,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_PIPE_SIZE,65,59,88,111,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_PIPE_THICK,212,59,55,95,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_BUILDIN_PLACE,65,76,88,96,CBS_DROPDOWNLIST | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_PIPE_PRESSURE,212,76,55,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_PIPE_MEDIUM,65,93,88,96,CBS_DROPDOWNLIST | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_MEDIUM_TEMPERATURE,212,93,55,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_PIPE_MAT,65,110,88,91,CBS_DROPDOWN | CBS_AUTOHSCROLL | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_TS,212,110,55,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_ENVIRON_TEMP,65,127,88,91,CBS_DROPDOWNLIST | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_TA,212,127,55,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_EDIT_METHOD,65,144,88,95,CBS_DROPDOWNLIST | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_AMOUNT,230,144,37,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_REMARK,65,162,202,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_INSIDE_MATNAME,359,25,75,110,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "内保温层厚",IDC_CHECK_THICK1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,277,42,81,8
+    EDITTEXT        IDC_EDIT_THICK1,359,40,75,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_OUTSIZE_MATNAME,359,55,75,95,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "外保温层厚",IDC_CHECK_THICK2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,277,73,81,8
+    EDITTEXT        IDC_EDIT_THICK2,359,70,75,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_SAFEGUARD_MATNAME,359,85,75,89,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_HEAT_TRANSFER_COEF,359,101,75,89,CBS_DROPDOWNLIST | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_WIDE_SPEED,359,117,75,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PRICE,359,132,51,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RUN_PERHOUR,359,147,75,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "最前",IDC_FOREFRONT,90,8,12,12,BS_BITMAP
+    PUSHBUTTON      "前面一个",IDC_PREVIOUS,102,8,12,12,BS_BITMAP
+    PUSHBUTTON      "后面一个",IDC_SUBSEQUENT,114,8,12,12,BS_BITMAP
+    PUSHBUTTON      "最后",IDC_LAST,126,8,12,12,BS_BITMAP
+    PUSHBUTTON      "加入新的记录",IDC_ADDNEW,148,8,12,12,BS_BITMAP
+    PUSHBUTTON      "删除当前记录",IDC_DELCURRENT,160,8,12,12,BS_BITMAP
+    PUSHBUTTON      "保存当前记录",IDC_SAVECURRENT,182,8,12,12,BS_BITMAP
+    PUSHBUTTON      "保存当前记录",IDC_DEL_ALL_INSU,195,8,12,12,BS_BITMAP
+    CONTROL         "滚动更新",IDC_UPDATABYROLL,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,216,9,49,13
+    PUSHBUTTON      "自动选择保温材料",IDC_AUTO_SELECTMAT,295,226,118,14
+    PUSHBUTTON      "按卷册号重排",IDC_SORT_BY_VOL,296,249,59,14
+    CONTROL         "请选择卷册：",IDC_VOLLIST_ISENABLE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,8,183,57,8
+    CONTROL         "请选择保温数据类型：",IDC_HEAT_PRESERVATION_TYPE_ENABLE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,162,183,89,8
+    CONTROL         "List2",IDC_VOLLIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | WS_BORDER | WS_TABSTOP,7,196,150,95
+    CONTROL         "List1",IDC_HEAT_PRESERVATION_TYPE,"SysListView32",
+                    LVS_REPORT | LVS_SINGLESEL | WS_BORDER | WS_TABSTOP,161,
+                    196,105,95
+    EDITTEXT        IDC_EDIT_HEAT_DENSITY,359,162,75,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    PUSHBUTTON      "退出",IDC_EXIT,364,249,48,14
+    GROUPBOX        "",IDC_STATIC,7,2,263,177
+    GROUPBOX        "",IDC_STATIC,273,17,166,195
+    LTEXT           "序号",IDC_STATIC,12,12,19,8
+    LTEXT           "卷册号",IDC_STATIC,12,29,25,8
+    LTEXT           "色环",IDC_STATIC_color,122,25,16,8
+    LTEXT           "管道/设备名称",IDC_STATIC,12,46,52,8
+    LTEXT           "管道外径/规格",IDC_STATIC,12,62,52,8
+    LTEXT           "管道壁厚",IDC_STATIC,158,63,43,9
+    LTEXT           "介质温度℃",IDC_STATIC,158,96,43,8
+    LTEXT           "安装地点",IDC_STATIC,12,79,52,8
+    LTEXT           "管道材质",IDC_STATIC,12,113,52,8
+    LTEXT           "备注",IDC_STATIC,12,165,26,12
+    LTEXT           "内保温层材料名称",IDC_STATIC_THICK1,277,27,81,8
+    LTEXT           "外保温层材料名称",IDC_STATIC_THICK2,277,58,81,8
+    LTEXT           "保护层材料名称",IDC_STATIC,277,88,64,8
+    LTEXT           "风速（m/s）",IDC_STATIC,277,121,64,8
+    LTEXT           "热价比主汽价",IDC_STATIC,277,136,64,8
+    LTEXT           "年运行小时数",IDC_STATIC,277,151,64,8
+    LTEXT           "管道长度或平壁面积",IDC_STATIC,158,146,72,9
+    CONTROL         "滚动时自动选择保温材料",IDC_CHECK_AUTOSELECT_PRE_EDIT,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,278,9,113,8
+    CONTROL         "表面温度℃",IDC_CHECK_TS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,158,112,54,9
+    CONTROL         "环境温度℃",IDC_CHECK_TA,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,158,129,54,9
+    LTEXT           "热流密度",IDC_STATIC,277,165,61,8
+    LTEXT           "散热量",IDC_STATIC,277,180,61,8
+    EDITTEXT        IDC_EDIT_HEAT_LOSS,359,177,75,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    CONTROL         "计算方法",IDC_CHECK_METHOD,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,12,147,52,8
+    CONTROL         "环境温度按",IDC_CHECK_ENV_TEMP,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,12,130,52,8
+    CONTROL         "放热系数取值按",IDC_CHECK_ALPHA,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,277,104,68,8
+    LTEXT           "管内介质",IDC_STATIC,13,96,52,8
+    LTEXT           "管内压力",IDC_STATIC,158,80,43,8
+    GROUPBOX        "",IDC_TITLE_TAB,442,3,101,281
+    PUSHBUTTON      "增加阀门记录",IDC_BUTTON_ADD_VALVE,212,43,54,12
+    LTEXT           "沿风速方向的平壁宽度",IDC_STATIC,277,196,81,8
+    EDITTEXT        IDC_EDIT_PLAIM_THICK,359,193,75,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "自动",IDC_BUTTON_CALC_RATIO,415,132,19,12
+END
+
+IDD_EDIT_OILPAINT_DATA DIALOG DISCARDABLE  0, 0, 294, 125
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "油漆原始数据编辑"
+FONT 9, "宋体"
+BEGIN
+    EDITTEXT        IDC_ID,48,15,61,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_VOLNO,48,28,61,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_PIPE_DEVICE_NAME,68,41,80,90,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_OILPAINT_COLOR,68,56,80,81,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_OILPAINT_TYPE,68,71,80,72,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_DEVICE_OUTSIDE_AREA,217,29,64,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PIPE_SIZE,217,43,64,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PIPE_LENGTH_DEVICE,217,57,64,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_REMARK,181,71,100,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "退出",IDC_EXIT_PAINT,134,100,57,15
+    PUSHBUTTON      "Button2",IDC_FOREFRONT,113,15,11,11,BS_BITMAP
+    PUSHBUTTON      "Button2",IDC_PREVIOUS,125,15,11,11,BS_BITMAP
+    PUSHBUTTON      "Button2",IDC_SUBSEQUENT,137,15,11,11,BS_BITMAP
+    PUSHBUTTON      "Button2",IDC_LAST,149,15,11,11,BS_BITMAP
+    PUSHBUTTON      "Button3",IDC_ADDNEW,171,15,12,12,BS_BITMAP
+    PUSHBUTTON      "Button3",IDC_DELCURRENT,184,15,12,12,BS_BITMAP
+    PUSHBUTTON      "Button2",IDC_SAVECURRENT,205,15,12,11,BS_BITMAP
+    CONTROL         "滚动更新",IDC_UPDATABYROLL,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,237,16,44,10
+    GROUPBOX        "",IDC_STATIC,7,7,280,81
+    LTEXT           "序号",IDC_STATIC,13,18,17,8
+    LTEXT           "卷册号",IDC_STATIC,13,31,28,8
+    LTEXT           "管道/设备名称",IDC_STATIC,13,45,53,8
+    LTEXT           "油漆颜色",IDC_STATIC,13,60,33,8
+    LTEXT           "油漆类型",IDC_STATIC,13,75,35,8
+    LTEXT           "设备外表面积",IDC_STATIC,155,31,49,8
+    LTEXT           "管道外径/规格",IDC_STATIC,155,45,53,8
+    LTEXT           "管道长度/设备数",IDC_STATIC,155,60,60,8
+    LTEXT           "备注",IDC_STATIC,155,75,17,8
+    PUSHBUTTON      "Button2",IDC_Del_All_Paint,218,15,12,11,BS_BITMAP
+END
+
+IDD_DLG_SEL_CRITERION_DB DIALOG DISCARDABLE  0, 0, 346, 195
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "选择规范数据库"
+FONT 9, "宋体"
+BEGIN
+    COMBOBOX        IDC_CBO_STUFF_DB,127,136,130,87,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "确定",IDOK,91,169,47,14
+    PUSHBUTTON      "取消",IDCANCEL,191,169,47,14
+    LTEXT           "材料数据库：",IDC_STATIC,71,139,50,9
+    LTEXT           "标准数据库(高亮显示的为当前使用的规范)",IDC_STATIC,11,8,
+                    162,10
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | WS_BORDER | WS_TABSTOP,1,20,341,103
+END
+
+IDD_DATA_SHOW_DLG DIALOG DISCARDABLE  0, 0, 377, 301
+STYLE WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_VISIBLE | 
+    WS_CLIPCHILDREN | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "数据显示"
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "",IDC_RESULT_BROWSE2,
+                    "{CDE57A43-8B86-11D0-B3C6-00A0C90AEA82}",NOT WS_VISIBLE | 
+                    WS_TABSTOP,255,2,120,298
+    CONTROL         "",IDC_RESULT_BROWSE,
+                    "{CDE57A43-8B86-11D0-B3C6-00A0C90AEA82}",WS_TABSTOP,0,0,
+                    377,301
+END
+
+IDD_APPINIT_DLG DIALOG DISCARDABLE  0, 0, 305, 91
+STYLE WS_POPUP | WS_CLIPCHILDREN
+FONT 9, "宋体"
+BEGIN
+    LTEXT           "Static",IDC_STATIC_INFO,7,31,291,26
+    CONTROL         "Progress1",IDC_INIT_PROGRESS,"msctls_progress32",
+                    WS_BORDER,7,66,291,10
+    LTEXT           "初始化...",IDC_STATIC,7,14,35,8
+END
+
+IDD_DIALOG_AUTO_TOTAL DIALOG DISCARDABLE  0, 0, 290, 189
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "自动生成说明表、汇总表并导出Excel中"
+FONT 9, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "确定(&OK)",IDOK,195,119,50,14
+    PUSHBUTTON      "取消(&C)",IDCANCEL,195,151,50,14
+    GROUPBOX        "选择生成表",IDC_STATIC,9,7,145,87
+    CONTROL         "生成保温说明表",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,18,23,73,8
+    CONTROL         "生成油漆说明表",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,18,36,73,8
+    CONTROL         "生成保温材料汇总表(标准+辅助)",IDC_CHECK3,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,18,49,128,8
+    CONTROL         "生成油漆材料汇总表(标准+辅助)",IDC_CHECK4,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,18,61,131,8
+    CONTROL         "生成保温材料汇总表(规格)",IDC_CHECK5,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,18,74,107,8
+    GROUPBOX        "选择导出到Excel中的表",IDC_STATIC,158,8,125,87
+    CONTROL         "保温说明表",IDC_CHECK6,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,166,23,59,8
+    CONTROL         "油漆说明表",IDC_CHECK7,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,166,36,59,8
+    CONTROL         "保温材料汇总表(标准+辅助)",IDC_CHECK8,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,166,49,114,8
+    CONTROL         "油漆材料汇总表(标准+辅助)",IDC_CHECK9,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,166,61,113,8
+    CONTROL         "保温材料汇总表(规格)",IDC_CHECK10,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,166,74,95,8
+    GROUPBOX        "选择编辑表",IDC_STATIC,9,97,145,80
+    CONTROL         "编辑保温说明表",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON,
+                    19,112,113,10
+    CONTROL         "编辑油漆说明表",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,
+                    19,124,113,10
+    CONTROL         "编辑保温材料汇总表(标准+辅助)",IDC_RADIO3,"Button",
+                    BS_AUTORADIOBUTTON,19,136,130,10
+    CONTROL         "编辑油漆材料汇总表(标准+辅助)",IDC_RADIO4,"Button",
+                    BS_AUTORADIOBUTTON,19,148,129,10
+    CONTROL         "编辑保温材料汇总表(规格)",IDC_RADIO5,"Button",
+                    BS_AUTORADIOBUTTON,19,160,113,10
+END
+
+IDD_IMPORT_FROM_XLS DIALOGEX 0, 0, 209, 246
+STYLE DS_MODALFRAME | WS_POPUP | WS_CLIPCHILDREN | WS_CAPTION | WS_SYSMENU
+CAPTION "从Excel导入原始数据"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "开始导入",IDC_BEGIN_IMPORT,125,225,57,14
+    PUSHBUTTON      "打开FileDialog对话框",IDC_OPEN_FILEDLG,179,20,15,14,
+                    BS_BITMAP
+    EDITTEXT        IDC_FILE_FULLPATH,8,20,171,14,ES_AUTOHSCROLL
+    LTEXT           "xls文件的路径",IDC_STATIC,11,5,51,8
+    GROUPBOX        "Static",IDC_PROP_WND_RECT,0,42,209,130,NOT WS_VISIBLE
+    LTEXT           "Static",IDC_HINT_INFORMATION,0,176,209,45,0,
+                    WS_EX_STATICEDGE
+    PUSHBUTTON      "设置默认的列号",IDC_SET_DEFAULT_NO,27,225,57,14
+END
+
+IDD_REPORT_CAL_ERROR_DLG DIALOG DISCARDABLE  0, 0, 180, 89
+STYLE WS_CHILD | WS_CLIPCHILDREN
+FONT 10, "宋体"
+BEGIN
+    EDITTEXT        IDC_REPORT_EDIT,0,0,180,89,ES_MULTILINE | ES_WANTRETURN | 
+                    WS_VSCROLL | WS_HSCROLL
+END
+
+IDD_DLG_RULE DIALOG DISCARDABLE  0, 0, 483, 301
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "油漆准则库维护"
+FONT 9, "宋体"
+BEGIN
+END
+
+IDD_PROPPAG_1 DIALOG DISCARDABLE  0, 0, 470, 279
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "单位耗量 、色环颜色、结构设计"
+FONT 9, "宋体"
+BEGIN
+    LTEXT           "调和漆单位耗量库(A_COLR_L)：",IDC_STATIC,5,5,113,10
+    LTEXT           "色环箭头油漆颜色准则库(A_COLOR):",IDC_STATIC,143,6,142,
+                    9
+    CONTROL         "",IDC_DATAGRID_A_COLR_L,
+                    "{CDE57A43-8B86-11D0-B3C6-00A0C90AEA82}",WS_TABSTOP,5,19,
+                    125,119
+    CONTROL         "",IDC_DATAGRID_A_COLOR,
+                    "{CDE57A43-8B86-11D0-B3C6-00A0C90AEA82}",WS_TABSTOP,143,
+                    19,322,119
+    CONTROL         "",IDC_DATAGRID_A_PAI,
+                    "{CDE57A43-8B86-11D0-B3C6-00A0C90AEA82}",WS_TABSTOP,5,
+                    158,461,117
+    COMBOBOX        IDC_COMBO1,171,63,97,107,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "油漆结构设计准则库(A_PAI):",IDC_STATIC,5,147,116,9
+END
+
+IDD_PROPPAG_2 DIALOG DISCARDABLE  0, 0, 468, 263
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "色环箭头尺寸"
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "",IDC_DATAGRID_A_ARROW,
+                    "{CDE57A43-8B86-11D0-B3C6-00A0C90AEA82}",WS_TABSTOP,13,
+                    24,440,79
+    CONTROL         "",IDC_DATAGRID_A_RING_PAINT,
+                    "{CDE57A43-8B86-11D0-B3C6-00A0C90AEA82}",WS_TABSTOP,12,
+                    149,256,48
+    LTEXT           "色环箭头尺寸准则库(A_ARROW):",IDC_STATIC,14,11,113,8
+    LTEXT           "色环箭头油漆材料名称库(A_RING_PAINT):",IDC_STATIC,13,
+                    136,149,8
+END
+
+IDD_SEL_CITY_WEATHER DIALOG DISCARDABLE  0, 0, 298, 209
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "城市气象参数"
+FONT 9, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,86,188,42,14
+    PUSHBUTTON      "取消",IDCANCEL,172,188,42,14
+    GROUPBOX        "选择地区",IDC_STATIC,17,13,266,42
+    LTEXT           "城市:",IDC_STATIC,161,32,24,8
+    COMBOBOX        IDC_COMBO_CITY,189,29,85,174,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "省/自治区",IDC_STATIC,25,31,37,8
+    COMBOBOX        IDC_COMBO_PROVINCE,67,27,85,173,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "当前工程的气象参数:",IDC_STATIC_WEATHER,17,61,77,8
+    CONTROL         "",IDC_DATAGRID1,"{CDE57A43-8B86-11D0-B3C6-00A0C90AEA82}",
+                    WS_TABSTOP,17,73,266,106
+END
+
+IDD_PARAMETER_CONGEAL DIALOG DISCARDABLE  0, 0, 89, 183
+STYLE DS_CONTROL | WS_CHILD | WS_CAPTION | WS_SYSMENU
+CAPTION "防冻保温法的参数"
+FONT 9, "宋体"
+BEGIN
+    EDITTEXT        IDC_EDIT_MEDIUM_DENSITY,44,4,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PIPE_DENSITY,44,20,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MEDIUM_HEAT,44,35,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PIPE_HEAT,44,50,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MEDIUM_MELT_HEAT,44,65,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_FLUX,44,80,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MEDIUM_CONGEAL_TEMP,44,96,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_STOP_TIME,44,130,40,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_HEAT_LOSS_DATA,44,166,40,48,CBS_DROPDOWN | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "介质密度",IDC_STATIC,3,7,33,8
+    LTEXT           "管材密度",IDC_STATIC,3,22,33,8
+    LTEXT           "介质比热",IDC_STATIC,3,37,33,8
+    LTEXT           "管材比热",IDC_STATIC,3,52,33,8
+    LTEXT           "介质融解热",IDC_STATIC,3,67,40,8
+    LTEXT           "流量",IDC_STATIC,3,82,17,8
+    LTEXT           "介质在管内冻结温度",IDC_STATIC,3,94,40,16
+    LTEXT           "防冻结管道允许液体停留时间(小时)",IDC_STATIC,3,112,72,
+                    17
+    LTEXT           "管道通过支吊架处的热(或冷)损失的附加系数",IDC_STATIC,3,
+                    146,82,18
+END
+
+IDD_PARAMETER_SUBTERRANEAN DIALOG DISCARDABLE  0, 0, 97, 253
+STYLE DS_CONTROL | WS_CHILD | WS_CAPTION
+CAPTION "埋地管道的参数"
+FONT 9, "宋体"
+BEGIN
+    COMBOBOX        IDC_COMBO_LAY,34,6,61,61,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    EDITTEXT        IDC_PIPE_SUB_DEPTH,60,45,33,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDAPHIC_TEMPERATURE,60,64,33,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDAPHIC_LAMDA,60,83,33,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PIPE_SPAN,60,102,33,12,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_CANAL_DEPTH,60,121,33,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PIPE_DAG,60,140,33,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CANAL_SIZE,60,196,33,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_SUPPORT_K,60,158,33,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CANAL_ALPHA,60,177,33,12,ES_AUTOHSCROLL
+    LTEXT           "管道敷设",IDC_STATIC,1,10,32,8
+    LTEXT           "管道埋设深度",IDC_STATIC,1,49,56,8
+    LTEXT           "土壤的温度",IDC_STATIC,1,67,43,8
+    LTEXT           "土壤的导热系数",IDC_STATIC,1,85,56,8
+    LTEXT           "管道之间的间距",IDC_STATIC,1,103,56,8
+    LTEXT           "管沟深度",IDC_STATIC,1,123,56,8
+    LTEXT           "管沟当量直径",IDC_STATIC,1,142,56,8
+    LTEXT           "管沟的主要尺寸",IDC_STATIC,1,198,56,8,NOT WS_VISIBLE
+    LTEXT           "支吊架的热损失校正系数",IDC_STATIC,1,158,58,16
+    LTEXT           "管沟内放热系数",IDC_STATIC,1,179,56,8
+    LTEXT           "管道的根数",IDC_STATIC,2,29,41,8
+    COMBOBOX        IDC_COMBO_PIPE_COUNT,60,25,33,61,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "第二根管的外径",IDC_STATIC,1,215,57,8
+    EDITTEXT        IDC_PIPE_TWO_D0,59,214,33,12,ES_AUTOHSCROLL
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "AutoIPED Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "AutoIPED\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2000-2010\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "AutoIPED.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "AutoIPED 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 260
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 80
+    END
+
+    IDD_DIALOG_pform, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 138
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 168
+    END
+
+    IDD_DIALOG_calc, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 109
+        VERTGUIDE, 19
+        VERTGUIDE, 98
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 124
+        HORZGUIDE, 19
+        HORZGUIDE, 25
+        HORZGUIDE, 45
+        HORZGUIDE, 50
+        HORZGUIDE, 70
+        HORZGUIDE, 75
+        HORZGUIDE, 95
+        HORZGUIDE, 100
+        HORZGUIDE, 120
+    END
+
+    IDD_DIALOG_newproject, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 221
+        TOPMARGIN, 10
+        BOTTOMMARGIN, 188
+    END
+
+    IDD_DIALOG_Range, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 189
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 64
+    END
+
+    IDD_DIALOG_input, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 213
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 58
+    END
+
+    IDD_FOLDER_LOCATION, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 336
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 138
+    END
+
+    IDD_DIALOG_OPTION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 413
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 200
+    END
+
+    IDD_EDIT_ORIGINAL_DATA, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 543
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 292
+    END
+
+    IDD_EDIT_OILPAINT_DATA, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 287
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 121
+    END
+
+    IDD_DLG_SEL_CRITERION_DB, DIALOG
+    BEGIN
+        LEFTMARGIN, 1
+        RIGHTMARGIN, 342
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 188
+    END
+
+    IDD_APPINIT_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 298
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 84
+    END
+
+    IDD_DIALOG_AUTO_TOTAL, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 288
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 186
+    END
+
+    IDD_IMPORT_FROM_XLS, DIALOG
+    BEGIN
+        VERTGUIDE, 8
+        BOTTOMMARGIN, 239
+    END
+
+    IDD_DLG_RULE, DIALOG
+    BEGIN
+        RIGHTMARGIN, 480
+        BOTTOMMARGIN, 298
+    END
+
+    IDD_PROPPAG_1, DIALOG
+    BEGIN
+        VERTGUIDE, 83
+    END
+
+    IDD_SEL_CITY_WEATHER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 292
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 202
+    END
+
+    IDD_PARAMETER_CONGEAL, DIALOG
+    BEGIN
+        RIGHTMARGIN, 88
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_DATA_SHOW_DLG DLGINIT
+BEGIN
+    IDC_RESULT_BROWSE2, 0x37a, 480, 0
+0x0024, 0x0000, 0x0043, 0x0044, 0x0045, 0x0035, 0x0037, 0x0041, 0x0035, 
+0x0035, 0x002d, 0x0038, 0x0042, 0x0038, 0x0036, 0x002d, 0x0031, 0x0031, 
+0x0044, 0x0030, 0x002d, 0x0062, 0x0033, 0x0043, 0x0036, 0x002d, 0x0030, 
+0x0030, 0x0041, 0x0030, 0x0043, 0x0039, 0x0030, 0x0041, 0x0045, 0x0041, 
+0x0038, 0x0032, 0x0012, 0x0000, 0x0001, 0x0000, 0x000a, 0x0000, 0x002a, 
+0x0000, 0x0000, 0x4321, 0x1234, 0x0008, 0x0000, 0x129b, 0x0000, 0x2e33, 
+0x0000, 0xe860, 0x5ad5, 0x0000, 0x0006, 0x0001, 0x0000, 0x0002, 0x0000, 
+0x0005, 0x8000, 0x0008, 0x8000, 0x0000, 0x3f80, 0x0000, 0x4170, 0x0000, 
+0x0000, 0x0101, 0x0002, 0x0001, 0x0101, 0xff01, 0x0100, 0x0000, 0x0000, 
+0x5203, 0x0be3, 0x8f91, 0x11ce, 0xe39d, 0xaa00, 0x4b00, 0x51b8, 0x8601, 
+0x0000, 0x0190, 0xd4c0, 0x0001, 0xcb04, 0xccce, 0x03e5, 0xe352, 0x910b, 
+0xce8f, 0x9d11, 0x00e3, 0x00aa, 0xb84b, 0x0151, 0x0086, 0x9000, 0xdc01, 
+0x017c, 0x0400, 0xcecb, 0xe5cc, 0x0000, 0x0000, 0x0000, 0x0000, 0x0006, 
+0x0000, 0x0004, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 
+0x0001, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 0x0001, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x5690, 0x6d83, 0x900b, 0x11d0, 
+0x8494, 0xa000, 0x11c9, 0xed10, 0x3850, 0x6b26, 0x0002, 0x0006, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0b54, 0x0000, 0x0bb8, 0x0000, 0x0c1c, 0x0000, 0x0804, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x5690, 0x6d83, 0x900b, 0x11d0, 
+0x8494, 0xa000, 0x11c9, 0xed10, 0x3850, 0x6b26, 0x0002, 0x0006, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x1000, 0x5600, 0x0804, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0002, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0000, 0x4264, 0x0000, 
+0x0000, 0x0002, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0001, 0x0000, 0x0000, 0x0000, 0x0000, 0x4264, 
+    IDC_RESULT_BROWSE, 0x37a, 480, 0
+0x0024, 0x0000, 0x0043, 0x0044, 0x0045, 0x0035, 0x0037, 0x0041, 0x0035, 
+0x0035, 0x002d, 0x0038, 0x0042, 0x0038, 0x0036, 0x002d, 0x0031, 0x0031, 
+0x0044, 0x0030, 0x002d, 0x0062, 0x0033, 0x0043, 0x0036, 0x002d, 0x0030, 
+0x0030, 0x0041, 0x0030, 0x0043, 0x0039, 0x0030, 0x0041, 0x0045, 0x0041, 
+0x0038, 0x0032, 0x0012, 0x0000, 0x0001, 0x0000, 0x000a, 0x0000, 0x002a, 
+0x0000, 0x0000, 0x4321, 0x1234, 0x0008, 0x0000, 0x3a7f, 0x0000, 0x2eb7, 
+0x0000, 0xe860, 0x5ad5, 0x0000, 0x0006, 0x0001, 0x0000, 0x0002, 0x0000, 
+0x0005, 0x8000, 0x0008, 0x8000, 0x0000, 0x3f80, 0x0000, 0x4170, 0x0000, 
+0x0000, 0x0101, 0x0002, 0x0001, 0x0101, 0xff01, 0x0100, 0x0000, 0x0000, 
+0x5203, 0x0be3, 0x8f91, 0x11ce, 0xe39d, 0xaa00, 0x4b00, 0x51b8, 0x8601, 
+0x0000, 0x0190, 0xd4c0, 0x0001, 0xcb04, 0xccce, 0x03e5, 0xe352, 0x910b, 
+0xce8f, 0x9d11, 0x00e3, 0x00aa, 0xb84b, 0x0151, 0x0086, 0x9000, 0xdc01, 
+0x017c, 0x0400, 0xcecb, 0xe5cc, 0x0000, 0x0000, 0x0000, 0x0000, 0x0006, 
+0x0000, 0x0004, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 
+0x0001, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 0x0001, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x5690, 0x6d83, 0x900b, 0x11d0, 
+0x8494, 0xa000, 0x11c9, 0xed10, 0x3850, 0x6b26, 0x0002, 0x0006, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0b54, 0x0000, 0x0bb8, 0x0000, 0x0c1c, 0x0000, 0x0804, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x5690, 0x6d83, 0x900b, 0x11d0, 
+0x8494, 0xa000, 0x11c9, 0xed10, 0x3850, 0x6b26, 0x0002, 0x0006, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x1000, 0x5600, 0x0804, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0002, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0000, 0x4264, 0x0000, 
+0x0000, 0x0002, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0001, 0x0000, 0x0000, 0x0000, 0x0000, 0x4264, 
+    0
+END
+
+IDD_PROPPAG_1 DLGINIT
+BEGIN
+    IDC_DATAGRID_A_COLR_L, 0x37a, 480, 0
+0x0024, 0x0000, 0x0043, 0x0044, 0x0045, 0x0035, 0x0037, 0x0041, 0x0035, 
+0x0035, 0x002d, 0x0038, 0x0042, 0x0038, 0x0036, 0x002d, 0x0031, 0x0031, 
+0x0044, 0x0030, 0x002d, 0x0062, 0x0033, 0x0043, 0x0036, 0x002d, 0x0030, 
+0x0030, 0x0041, 0x0030, 0x0043, 0x0039, 0x0030, 0x0041, 0x0045, 0x0041, 
+0x0038, 0x0032, 0x0012, 0x0000, 0x0001, 0x0000, 0x000a, 0x0000, 0x002a, 
+0x0000, 0x0000, 0x4321, 0x1234, 0x0008, 0x0000, 0x136e, 0x0000, 0x1280, 
+0x0000, 0xe860, 0x5ad5, 0x0000, 0x0006, 0x0001, 0x0000, 0x0002, 0x0000, 
+0x0005, 0x8000, 0x0008, 0x8000, 0x0000, 0x3f80, 0x0000, 0x4170, 0x0000, 
+0x0000, 0x0101, 0x0002, 0x0001, 0x0101, 0xff01, 0x0100, 0x0000, 0x0000, 
+0x5203, 0x0be3, 0x8f91, 0x11ce, 0xe39d, 0xaa00, 0x4b00, 0x51b8, 0x8601, 
+0x0000, 0x0190, 0xd4c0, 0x0001, 0xcb04, 0xccce, 0x03e5, 0xe352, 0x910b, 
+0xce8f, 0x9d11, 0x00e3, 0x00aa, 0xb84b, 0x0151, 0x0086, 0x9000, 0xdc01, 
+0x017c, 0x0400, 0xcecb, 0xe5cc, 0x0000, 0x0000, 0x0000, 0x0000, 0x0006, 
+0x0000, 0x0004, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 
+0x0001, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 0x0001, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x5690, 0x6d83, 0x900b, 0x11d0, 
+0x8494, 0xa000, 0x11c9, 0xed10, 0x3850, 0x6b26, 0x0002, 0x0006, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0b54, 0x0000, 0x0bb8, 0x0000, 0x0c1c, 0x0000, 0x0804, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x5690, 0x6d83, 0x900b, 0x11d0, 
+0x8494, 0xa000, 0x11c9, 0xed10, 0x3850, 0x6b26, 0x0002, 0x0006, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x1000, 0x5600, 0x0804, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0002, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0000, 0x4264, 0x0000, 
+0x0000, 0x0002, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0001, 0x0000, 0x0000, 0x0000, 0x0000, 0x4264, 
+    IDC_DATAGRID_A_COLOR, 0x37a, 480, 0
+0x0024, 0x0000, 0x0043, 0x0044, 0x0045, 0x0035, 0x0037, 0x0041, 0x0035, 
+0x0035, 0x002d, 0x0038, 0x0042, 0x0038, 0x0036, 0x002d, 0x0031, 0x0031, 
+0x0044, 0x0030, 0x002d, 0x0062, 0x0033, 0x0043, 0x0036, 0x002d, 0x0030, 
+0x0030, 0x0041, 0x0030, 0x0043, 0x0039, 0x0030, 0x0041, 0x0045, 0x0041, 
+0x0038, 0x0032, 0x0012, 0x0000, 0x0001, 0x0000, 0x000a, 0x0000, 0x002a, 
+0x0000, 0x0000, 0x4321, 0x1234, 0x0008, 0x0000, 0x31eb, 0x0000, 0x1280, 
+0x0000, 0xe860, 0x5ad5, 0x0000, 0x0006, 0x0001, 0x0000, 0x0002, 0x0000, 
+0x0005, 0x8000, 0x0008, 0x8000, 0x0000, 0x3f80, 0x0000, 0x4170, 0x0000, 
+0x0000, 0x0101, 0x0002, 0x0001, 0x0101, 0xff01, 0x0100, 0x0000, 0x0000, 
+0x5203, 0x0be3, 0x8f91, 0x11ce, 0xe39d, 0xaa00, 0x4b00, 0x51b8, 0x8601, 
+0x0000, 0x0190, 0xd4c0, 0x0001, 0xcb04, 0xccce, 0x03e5, 0xe352, 0x910b, 
+0xce8f, 0x9d11, 0x00e3, 0x00aa, 0xb84b, 0x0151, 0x0086, 0x9000, 0xdc01, 
+0x017c, 0x0400, 0xcecb, 0xe5cc, 0x0000, 0x0000, 0x0000, 0x0000, 0x0006, 
+0x0000, 0x0004, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 
+0x0001, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 0x0001, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x5690, 0x6d83, 0x900b, 0x11d0, 
+0x8494, 0xa000, 0x11c9, 0xed10, 0x3850, 0x6b26, 0x0002, 0x0006, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0b54, 0x0000, 0x0bb8, 0x0000, 0x0c1c, 0x0000, 0x0804, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x5690, 0x6d83, 0x900b, 0x11d0, 
+0x8494, 0xa000, 0x11c9, 0xed10, 0x3850, 0x6b26, 0x0002, 0x0006, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x1000, 0x5600, 0x0804, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0002, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0000, 0x4264, 0x0000, 
+0x0000, 0x0002, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0001, 0x0000, 0x0000, 0x0000, 0x0000, 0x4264, 
+    IDC_DATAGRID_A_PAI, 0x37a, 480, 0
+0x0024, 0x0000, 0x0043, 0x0044, 0x0045, 0x0035, 0x0037, 0x0041, 0x0035, 
+0x0035, 0x002d, 0x0038, 0x0042, 0x0038, 0x0036, 0x002d, 0x0031, 0x0031, 
+0x0044, 0x0030, 0x002d, 0x0062, 0x0033, 0x0043, 0x0036, 0x002d, 0x0030, 
+0x0030, 0x0041, 0x0030, 0x0043, 0x0039, 0x0030, 0x0041, 0x0045, 0x0041, 
+0x0038, 0x0032, 0x0012, 0x0000, 0x0001, 0x0000, 0x000a, 0x0000, 0x002a, 
+0x0000, 0x0000, 0x4321, 0x1234, 0x0008, 0x0000, 0x4785, 0x0000, 0x1231, 
+0x0000, 0xe860, 0x5ad5, 0x0000, 0x0006, 0x0001, 0x0000, 0x0002, 0x0000, 
+0x0005, 0x8000, 0x0008, 0x8000, 0x0000, 0x3f80, 0x0000, 0x4170, 0x0000, 
+0x0000, 0x0101, 0x0002, 0x0001, 0x0101, 0xff01, 0x0100, 0x0000, 0x0000, 
+0x5203, 0x0be3, 0x8f91, 0x11ce, 0xe39d, 0xaa00, 0x4b00, 0x51b8, 0x8601, 
+0x0000, 0x0190, 0xd4c0, 0x0001, 0xcb04, 0xccce, 0x03e5, 0xe352, 0x910b, 
+0xce8f, 0x9d11, 0x00e3, 0x00aa, 0xb84b, 0x0151, 0x0086, 0x9000, 0xdc01, 
+0x017c, 0x0400, 0xcecb, 0xe5cc, 0x0000, 0x0000, 0x0000, 0x0000, 0x0006, 
+0x0000, 0x0004, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 
+0x0001, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 0x0001, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x5690, 0x6d83, 0x900b, 0x11d0, 
+0x8494, 0xa000, 0x11c9, 0xed10, 0x3850, 0x6b26, 0x0002, 0x0006, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0b54, 0x0000, 0x0bb8, 0x0000, 0x0c1c, 0x0000, 0x0804, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x5690, 0x6d83, 0x900b, 0x11d0, 
+0x8494, 0xa000, 0x11c9, 0xed10, 0x3850, 0x6b26, 0x0002, 0x0006, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x1000, 0x5600, 0x0804, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0002, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0000, 0x4264, 0x0000, 
+0x0000, 0x0002, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0001, 0x0000, 0x0000, 0x0000, 0x0000, 0x4264, 
+    0
+END
+
+IDD_SEL_CITY_WEATHER DLGINIT
+BEGIN
+    IDC_DATAGRID1, 0x37a, 480, 0
+0x0024, 0x0000, 0x0043, 0x0044, 0x0045, 0x0035, 0x0037, 0x0041, 0x0035, 
+0x0035, 0x002d, 0x0038, 0x0042, 0x0038, 0x0036, 0x002d, 0x0031, 0x0031, 
+0x0044, 0x0030, 0x002d, 0x0062, 0x0033, 0x0043, 0x0036, 0x002d, 0x0030, 
+0x0030, 0x0041, 0x0030, 0x0043, 0x0039, 0x0030, 0x0041, 0x0045, 0x0041, 
+0x0038, 0x0032, 0x0012, 0x0000, 0x0001, 0x0000, 0x000a, 0x0000, 0x002a, 
+0x0000, 0x0000, 0x4321, 0x1234, 0x0008, 0x0000, 0x293d, 0x0000, 0x106f, 
+0x0000, 0xe860, 0x5ad5, 0x0000, 0x0006, 0x0001, 0x0000, 0x0002, 0x0000, 
+0x0005, 0x8000, 0x0008, 0x8000, 0x0000, 0x3f80, 0x0000, 0x4170, 0x0000, 
+0x0000, 0x0101, 0x0002, 0x0001, 0x0101, 0x0101, 0x0100, 0x0000, 0x0000, 
+0x5203, 0x0be3, 0x8f91, 0x11ce, 0xe39d, 0xaa00, 0x4b00, 0x51b8, 0x8601, 
+0x0000, 0x0190, 0x5f90, 0x0001, 0xcb04, 0xccce, 0x03e5, 0xe352, 0x910b, 
+0xce8f, 0x9d11, 0x00e3, 0x00aa, 0xb84b, 0x0151, 0x0086, 0x9000, 0x9001, 
+0x015f, 0x0400, 0xcecb, 0xe5cc, 0x0000, 0x0000, 0x0000, 0x0000, 0x0006, 
+0x0000, 0x0004, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 
+0x0001, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 0x0001, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x5690, 0x6d83, 0x900b, 0x11d0, 
+0x8494, 0xa000, 0x11c9, 0xed10, 0x3850, 0x6b26, 0x0002, 0x0006, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0804, 0x0002, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x5690, 0x6d83, 0x900b, 0x11d0, 
+0x8494, 0xa000, 0x11c9, 0xed10, 0x3850, 0x6b26, 0x0002, 0x0006, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0086, 0x9000, 0x9001, 0x015f, 0x0400, 0xcecb, 0x0804, 0x0002, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0002, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0000, 0x4234, 0x0000, 
+0x0000, 0x0002, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0001, 0x0000, 0x0000, 0x0000, 0x0000, 0x4234, 
+    0
+END
+
+IDD_PROPPAG_2 DLGINIT
+BEGIN
+    IDC_DATAGRID_A_ARROW, 0x37a, 480, 0
+0x0024, 0x0000, 0x0043, 0x0044, 0x0045, 0x0035, 0x0037, 0x0041, 0x0035, 
+0x0035, 0x002d, 0x0038, 0x0042, 0x0038, 0x0036, 0x002d, 0x0031, 0x0031, 
+0x0044, 0x0030, 0x002d, 0x0062, 0x0033, 0x0043, 0x0036, 0x002d, 0x0030, 
+0x0030, 0x0041, 0x0030, 0x0043, 0x0039, 0x0030, 0x0041, 0x0045, 0x0041, 
+0x0038, 0x0032, 0x0012, 0x0000, 0x0001, 0x0000, 0x000a, 0x0000, 0x002a, 
+0x0000, 0x0000, 0x4321, 0x1234, 0x0008, 0x0000, 0x4437, 0x0000, 0x0c4d, 
+0x0000, 0xe860, 0x5ad5, 0x0000, 0x0006, 0x0001, 0x0000, 0x0002, 0x0000, 
+0x0005, 0x8000, 0x0008, 0x8000, 0x0000, 0x3f80, 0x0000, 0x4170, 0x0000, 
+0x0000, 0x0101, 0x0002, 0x0001, 0x0101, 0xff01, 0x0100, 0x0000, 0x0000, 
+0x5203, 0x0be3, 0x8f91, 0x11ce, 0xe39d, 0xaa00, 0x4b00, 0x51b8, 0x8601, 
+0x0000, 0x0190, 0xd4c0, 0x0001, 0xcb04, 0xccce, 0x03e5, 0xe352, 0x910b, 
+0xce8f, 0x9d11, 0x00e3, 0x00aa, 0xb84b, 0x0151, 0x0086, 0x9000, 0xdc01, 
+0x017c, 0x0400, 0xcecb, 0xe5cc, 0x0000, 0x0000, 0x0000, 0x0000, 0x0006, 
+0x0000, 0x0004, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 
+0x0001, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 0x0001, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x5690, 0x6d83, 0x900b, 0x11d0, 
+0x8494, 0xa000, 0x11c9, 0xed10, 0x3850, 0x6b26, 0x0002, 0x0006, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0b54, 0x0000, 0x0bb8, 0x0000, 0x0c1c, 0x0000, 0x0804, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x5690, 0x6d83, 0x900b, 0x11d0, 
+0x8494, 0xa000, 0x11c9, 0xed10, 0x3850, 0x6b26, 0x0002, 0x0006, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x1000, 0x5600, 0x0804, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0002, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0000, 0x4264, 0x0000, 
+0x0000, 0x0002, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0001, 0x0000, 0x0000, 0x0000, 0x0000, 0x4264, 
+    IDC_DATAGRID_A_RING_PAINT, 0x37a, 480, 0
+0x0024, 0x0000, 0x0043, 0x0044, 0x0045, 0x0035, 0x0037, 0x0041, 0x0035, 
+0x0035, 0x002d, 0x0038, 0x0042, 0x0038, 0x0036, 0x002d, 0x0031, 0x0031, 
+0x0044, 0x0030, 0x002d, 0x0062, 0x0033, 0x0043, 0x0036, 0x002d, 0x0030, 
+0x0030, 0x0041, 0x0030, 0x0043, 0x0039, 0x0030, 0x0041, 0x0045, 0x0041, 
+0x0038, 0x0032, 0x0012, 0x0000, 0x0001, 0x0000, 0x000a, 0x0000, 0x002a, 
+0x0000, 0x0000, 0x4321, 0x1234, 0x0008, 0x0000, 0x27b0, 0x0000, 0x0771, 
+0x0000, 0xe860, 0x5ad5, 0x0000, 0x0006, 0x0001, 0x0000, 0x0002, 0x0000, 
+0x0005, 0x8000, 0x0008, 0x8000, 0x0000, 0x3f80, 0x0000, 0x4170, 0x0000, 
+0x0000, 0x0101, 0x0002, 0x0001, 0x0101, 0xff01, 0x0100, 0x0000, 0x0000, 
+0x5203, 0x0be3, 0x8f91, 0x11ce, 0xe39d, 0xaa00, 0x4b00, 0x51b8, 0x8601, 
+0x0000, 0x0190, 0xd4c0, 0x0001, 0xcb04, 0xccce, 0x03e5, 0xe352, 0x910b, 
+0xce8f, 0x9d11, 0x00e3, 0x00aa, 0xb84b, 0x0151, 0x0086, 0x9000, 0xdc01, 
+0x017c, 0x0400, 0xcecb, 0xe5cc, 0x0000, 0x0000, 0x0000, 0x0000, 0x0006, 
+0x0000, 0x0004, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 
+0x0001, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 0x0001, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x5690, 0x6d83, 0x900b, 0x11d0, 
+0x8494, 0xa000, 0x11c9, 0xed10, 0x3850, 0x6b26, 0x0002, 0x0006, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0b54, 0x0000, 0x0bb8, 0x0000, 0x0c1c, 0x0000, 0x0804, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x5690, 0x6d83, 0x900b, 0x11d0, 
+0x8494, 0xa000, 0x11c9, 0xed10, 0x3850, 0x6b26, 0x0002, 0x0006, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x1000, 0x5600, 0x0804, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0002, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0000, 0x4264, 0x0000, 
+0x0000, 0x0002, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0001, 0x0000, 0x0000, 0x0000, 0x0000, 0x4264, 
+    0
+END
+
+IDD_PARAMETER_CONGEAL DLGINIT
+BEGIN
+    IDC_COMBO_HEAT_LOSS_DATA, 0x403, 5, 0
+0x2e31, 0x3530, "\000" 
+    IDC_COMBO_HEAT_LOSS_DATA, 0x403, 5, 0
+0x2e31, 0x3031, "\000" 
+    IDC_COMBO_HEAT_LOSS_DATA, 0x403, 5, 0
+0x2e31, 0x3531, "\000" 
+    0
+END
+
+IDD_PARAMETER_SUBTERRANEAN DLGINIT
+BEGIN
+    IDC_COMBO_LAY, 0x403, 1, 0
+"\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_SPLITH              CURSOR  DISCARDABLE     "res\\splith.cur"
+IDC_SPLITV              CURSOR  DISCARDABLE     "res\\splitv.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "AutoIPED\n\nAutoIP\n\n\nAutoIPED.Document\nAutoIP Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "AutoIPED"
+    AFX_IDS_IDLEMESSAGE     "就绪"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "扩展名"
+    ID_INDICATOR_CAPS       "大写"
+    ID_INDICATOR_NUM        "数字"
+    ID_INDICATOR_SCRL       "滚动"
+    ID_INDICATOR_OVR        "改写"
+    ID_INDICATOR_REC        "记录"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "建立新文档\n新建"
+    ID_FILE_OPEN            "打开一个现有文档\n打开"
+    ID_FILE_CLOSE           "关闭活动文档\n关闭"
+    ID_FILE_SAVE            "保存活动文档\n保存"
+    ID_FILE_SAVE_AS         "将活动文档以一个新文件名保存\n另存为"
+    ID_FILE_PAGE_SETUP      "改变打印选项\n页面设置"
+    ID_FILE_PRINT_SETUP     "改变打印机及打印选项\n打印设置"
+    ID_FILE_PRINT           "打印活动文档\n打印"
+    ID_FILE_PRINT_PREVIEW   "显示整页\n打印预览"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "显示程序信息，版本号和版权\n关于"
+    ID_APP_EXIT             "退出应用程序；提示保存文档\n退出"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "打开该文档"
+    ID_FILE_MRU_FILE2       "打开该文档"
+    ID_FILE_MRU_FILE3       "打开该文档"
+    ID_FILE_MRU_FILE4       "打开该文档"
+    ID_FILE_MRU_FILE5       "打开该文档"
+    ID_FILE_MRU_FILE6       "打开该文档"
+    ID_FILE_MRU_FILE7       "打开该文档"
+    ID_FILE_MRU_FILE8       "打开该文档"
+    ID_FILE_MRU_FILE9       "打开该文档"
+    ID_FILE_MRU_FILE10      "打开该文档"
+    ID_FILE_MRU_FILE11      "打开该文档"
+    ID_FILE_MRU_FILE12      "打开该文档"
+    ID_FILE_MRU_FILE13      "打开该文档"
+    ID_FILE_MRU_FILE14      "打开该文档"
+    ID_FILE_MRU_FILE15      "打开该文档"
+    ID_FILE_MRU_FILE16      "打开该文档"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "切换到下一个窗格\n下一窗格"
+    ID_PREV_PANE            "切换回前一个窗格\n前一窗格"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "将活动的窗口分隔成窗格\n分隔"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "删除被选对象\n删除"
+    ID_EDIT_CLEAR_ALL       "全部删除\n全部删除"
+    ID_EDIT_COPY            "复制被选对象并将其置于剪贴板上\n复制"
+    ID_EDIT_CUT             "剪切被选对象并将其置于剪贴板上\n剪切"
+    ID_EDIT_FIND            "查找指定的正文\n查找"
+    ID_EDIT_PASTE           "插入剪贴板内容\n粘贴"
+    ID_EDIT_REPEAT          "重复上一步操作\n重复"
+    ID_EDIT_REPLACE         "用不同的正文替换指定的正文\n替换"
+    ID_EDIT_SELECT_ALL      "选择整个文档\n选择全部"
+    ID_EDIT_UNDO            "撤消最后一步操作\n撤消"
+    ID_EDIT_REDO            "重新执行先前已撤消的操作\n重新执行"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "显示或隐藏工具栏\n显隐工具栏"
+    ID_VIEW_STATUS_BAR      "显示或隐藏状态栏\n显隐状态栏"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "改变窗口大小"
+    AFX_IDS_SCMOVE          "改变窗口位置"
+    AFX_IDS_SCMINIMIZE      "将窗口缩小成图标"
+    AFX_IDS_SCMAXIMIZE      "把窗口放大到最大尺寸"
+    AFX_IDS_SCNEXTWINDOW    "切换到下一个文档窗口"
+    AFX_IDS_SCPREVWINDOW    "切换到先前的文档窗口"
+    AFX_IDS_SCCLOSE         "关闭活动的窗口并提示保存所有文档"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "把窗口恢复到正常大小"
+    AFX_IDS_SCTASKLIST      "激活任务表"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "关闭打印预览模式\n取消预阅"
+    IDS_UESOFTCO            "长沙优易软件开发有限公司"
+    IDS_EDIBDir0            "应用程序目录"
+    IDS_EDITDir1            "模板文件目录"
+    IDS_EDITDir2            "项目数据库存放目录"
+    IDS_EDITDir3            "项目临时数据库存放目录"
+    IDS_EDITDir4            "通用图形块安装目录"
+    IDS_EDITDir5            "项目成果图形存放目录"
+    IDS_EDITDir6            "支吊架图形块安装目录"
+    IDS_frmFolderLocation_frmFolderLocation "选择文件夹(目录)位置"
+    IDS_WarnDontRandomEDITthisDirectoryString 
+                            "警告：如果没有把握，请不要随便修改这些目录！"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDM_SEL_PRJ_VOLUME      "选择工程\n选择工程"
+    IDM_IMPORT_AUTOPD       "导入AutoPD数据"
+    IDM_IMPORT_AUTOPHS      "导入AutoPHS数据"
+    IDM_FILE_SELDIR         "文件夹(目录)位置"
+    IDM_SELECT_DATABASE     "选择规范数据库"
+    IDM_OPTION              "弹出选项对话框"
+    ID_BUTTON_STOPCAL       "停止计算\n停止计算 (Shift+F5)"
+    ID_DESTROYDLG           "关闭对话框\n关闭对话框"
+    ID_EDIT_DATAGRADE       "编辑\n编辑"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_SELECT_NEED_FILE    "请选择一个AutoIPED需要的文件夹"
+    IDS_NOSELECT_ANYFILE    "没有选择任何文件夹"
+    ID_PROGRESS             "                                                               "
+    IDS_NOSELECTPROJECT     "未选择工程!"
+    IDS_STR_CHECK           "准则库中没有错误!"
+    IDS_IMPORT_ITEM_REMARK  "请选择与[%s]对应的Excel列作为输入!"
+    IDS_NOT_EXISTS_FILE     "找不到文件'%s'，请确认是否存在！"
+    IDS_STRING_REPLACE_SUCCESS "完成单位的替换！"
+    IDS_REALLYAUTOSELALLMAT "真地要重新自动选择全部保温材料吗？这将先重置所有保温材料!"
+    IDS_SHAREDIR_ISEMPTY    "共享文件夹是空字符串"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDM_REPLACE_CURRENT_OLDNAME_NEWNAME "替换当前工程中所有旧的材料名称"
+    ID_BUTTON_AUTO_TOTAL    "自动生成所有说明表、汇总表并导出Excel中\n自动生成所有说明表、汇总表并导出Excel中"
+    IDM_VIEW_OUTPUT         "显示隐藏输出窗口 Alt+4\n显隐输出窗口 Alt+4"
+    ID_MODI_RULE1           "油漆准则库维护\n油漆准则库维护"
+    IDM_MATERIAL_DATABASE   "编辑或修改许用应力，弹性模量，膨胀系数数据\n打开材料数据库"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_MENUITEM31           "编辑原始数据\n编辑原始数据"
+    ID_MENUITEM32           "开始保温厚度计算\n保温厚度计算 (F5)"
+    ID_MENUITEM36           "编辑油漆原始数据\n编辑油漆原始数据"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDM_COPY_FROM_EXIST_PRJ "套用、新建、删除工程\n新建工程"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_CLOSE_ALL_WINDOW     "关闭所有的浏览结果对话框\n关闭所有的浏览结果对话框"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDM_OUT_VIEW            "显示隐藏输出窗口\n输出窗口"
+    IDM_CHECK_COHERENCE     "检查准则库的一致性"
+    IDM_THICKNESS_REGULAR   "保温厚度规则库"
+    IDM_SHOW_ALL_TABLE      "查看各表之间的关联"
+    ID_CITY_WEATHER         "工程气象参数"
+    ID_MENUI_RING_NAME      "色环箭头油漆材料名称库"
+    ID_MENUITEM32878        "色环箭头尺寸准则库..."
+    ID_ALL_MINIMIZE         "将所有的浏览窗口最小化\n将所有的浏览窗口最小化"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_MENU_REPLACE_UNIT    "替换准则库中的单位"
+    IDM_IMPORT_OTHER_IPED_UESOFT "导入UESOFT保温设计软件数据"
+    IDM_IMPORT_OTHER_IPED_SW "导入西南院保温设计软件数据"
+    IDM_IMPORT_OTHER_IPED_JS "导入江苏院保温设计软件数据"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\AutoIPED.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#include "l.chs\afxprint.rc"        // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
